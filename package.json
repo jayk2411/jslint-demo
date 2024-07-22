@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx jslint app.js"
+    "lint": "node ./node_modules/jslint/bin/jslint.js app.js"
   },
   "keywords": [],
   "author": "",
