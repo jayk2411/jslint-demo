@@ -1,11 +1,11 @@
 
 // 1. code with error for jslint
-function sayHello(name) {
-    if(name)
-    console.log("Hello, " + name);
-}
+// function sayHello(name) {
+//     if(name)
+//     console.log("Hello, " + name);
+// }
 
-sayHello("World")
+// sayHello("World")
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -114,88 +114,88 @@ sayHello("World")
 
 
 
-// 'use strict'; // Enforce strict mode for better error-checking
+'use strict'; // Enforce strict mode for better error-checking
 
-// // Function to greet a user
-// function sayHello(name) {
-//     if (name) {
-//         console.log("Hello, " + name);
-//     } else {
-//         console.log("Hello, stranger!");
-//     }
-// }
+// Function to greet a user
+function sayHello(name) {
+    if (name) {
+        console.log("Hello, " + name);
+    } else {
+        console.log("Hello, stranger!");
+    }
+}
 
-// sayHello("World");
+sayHello("World");
 
-// // Example of a function with proper variable declaration
-// function calculateArea(radius) {
-//     var pi = 3.14159; // Use 'var' for compatibility
-//     if (radius <= 0) {
-//         return 0;
-//     }
-//     return pi * radius * radius;
-// }
+// Example of a function with proper variable declaration
+function calculateArea(radius) {
+    var pi = 3.14159; // Use 'var' for compatibility
+    if (radius <= 0) {
+        return 0;
+    }
+    return pi * radius * radius;
+}
 
-// console.log("Area: " + calculateArea(5));
+console.log("Area: " + calculateArea(5));
 
-// // Corrected for loop to avoid using '++'
-// function countToTen() {
-//     var i; // Declare 'i' outside of the loop for ES5 compatibility
-//     for (i = 1; i <= 10; i += 1) { // Use 'i += 1' instead of 'i++'
-//         console.log(i);
-//     }
-// }
+// Corrected for loop to avoid using '++'
+function countToTen() {
+    var i; // Declare 'i' outside of the loop for ES5 compatibility
+    for (i = 1; i <= 10; i += 1) { // Use 'i += 1' instead of 'i++'
+        console.log(i);
+    }
+}
 
-// countToTen();
+countToTen();
 
-// // Avoid using global variables unnecessarily
-// function useLocalVar() {
-//     var localVar = "I'm a local variable"; // Use 'var' for compatibility
-//     console.log(localVar); 
-// }
+// Avoid using global variables unnecessarily
+function useLocalVar() {
+    var localVar = "I'm a local variable"; // Use 'var' for compatibility
+    console.log(localVar); 
+}
 
-// useLocalVar();
+useLocalVar();
 
-// // Example of a function with used parameters
-// function addNumbers(a, b, c) {
-//     return a + b + c; // Utilize all parameters to avoid unused warnings
-// }
+// Example of a function with used parameters
+function addNumbers(a, b, c) {
+    return a + b + c; // Utilize all parameters to avoid unused warnings
+}
 
-// console.log("Sum: " + addNumbers(2, 3, 4));
+console.log("Sum: " + addNumbers(2, 3, 4));
 
-// // Correct scoping and avoid referencing undefined variables
-// function outerFunction() {
-//     var outerVar = "I'm an outer variable"; // Use 'var' for compatibility
+// Correct scoping and avoid referencing undefined variables
+function outerFunction() {
+    var outerVar = "I'm an outer variable"; // Use 'var' for compatibility
 
-//     function innerFunction() {
-//         var innerVar = "I'm an inner variable"; // Use 'var' for compatibility
-//         console.log(outerVar); // Accessing outer scope variable
-//         console.log(innerVar); // Correctly using inner scope variable
-//     }
+    function innerFunction() {
+        var innerVar = "I'm an inner variable"; // Use 'var' for compatibility
+        console.log(outerVar); // Accessing outer scope variable
+        console.log(innerVar); // Correctly using inner scope variable
+    }
 
-//     innerFunction(); // Ensure function calls are correctly scoped
-// }
+    innerFunction(); // Ensure function calls are correctly scoped
+}
 
-// outerFunction();
+outerFunction();
 
-// // Example of an anonymous function with correct formatting
-// var anonymousFunction = function() { // Use 'var' for compatibility
-//     console.log("This is an anonymous function");
-// };
+// Example of an anonymous function with correct formatting
+var anonymousFunction = function() { // Use 'var' for compatibility
+    console.log("This is an anonymous function");
+};
 
-// anonymousFunction();
+anonymousFunction();
 
-// // Example of a function with a fixed missing semicolon
-// function properlyFormattedFunction() {
-//     console.log("This line has a semicolon");
-// }
+// Example of a function with a fixed missing semicolon
+function properlyFormattedFunction() {
+    console.log("This line has a semicolon");
+}
 
-// properlyFormattedFunction();
+properlyFormattedFunction();
 
-// // Example of consistent naming conventions
-// function consistentNaming() {
-//     var userName = "John", userAge = 30; // Declare 'userName' first // Continue with the same 'var' statement
-//     console.log("User: " + userName + ", Age: " + userAge);
-// }
+// Example of consistent naming conventions
+function consistentNaming() {
+    var userName = "John", userAge = 30; // Declare 'userName' first // Continue with the same 'var' statement
+    console.log("User: " + userName + ", Age: " + userAge);
+}
 
-// consistentNaming();
+consistentNaming();
