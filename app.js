@@ -1,24 +1,24 @@
 
 // 1. code with error for jslint
-function sayHello(name) {
-    if(name)
-    console.log("Hello, " + name);
-}
+// function sayHello(name) {
+//     if(name)
+//     console.log("Hello, " + name);
+// }
 
-sayHello("World")
+// sayHello("World")
 
 
 ///////////////////////////////////////////////////////////////////////////////////
 
 //2. code with no error for jslint
-// 'use strict'; // Enforces strict mode
-// function sayHello(name) {
-//     if (name) {
-//         console.log("Hello, " + name);
-//     }
-// }
+'use strict'; // Enforces strict mode
+function sayHello(name) {
+    if (name) {
+        console.log("Hello, " + name);
+    }
+}
 
-// sayHello("World");
+sayHello("World");
 
 
 /////////////////////////////////////////////////////////////////////
@@ -104,13 +104,13 @@ sayHello("World")
 // missingSemicolon()
 
 // Example of inconsistent naming conventions
-function inconsistentNaming() {
-    var user_name = "John"; // Snake_case instead of camelCase
-    var UserAge = 30; // PascalCase instead of camelCase
-    console.log("User: " + user_name + ", Age: " + UserAge);
-}
+// function inconsistentNaming() {
+//     var user_name = "John"; // Snake_case instead of camelCase
+//     var UserAge = 30; // PascalCase instead of camelCase
+//     console.log("User: " + user_name + ", Age: " + UserAge);
+// }
 
-inconsistentNaming();
+// inconsistentNaming();
 
 
 
