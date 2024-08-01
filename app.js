@@ -1,11 +1,11 @@
 
 // 1. code with error for jslint
-// function sayHello(name) {
-//     if(name)
-//     console.log("Hello, " + name);
-// }
+function sayHello(name) {
+    if(name)
+    console.log("Hello, " + name);
+}
 
-// sayHello("World")
+sayHello("World")
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@
 
 /////////////////////////////////////////////////////////////////////
 
-//3. with big content
+// 3. with big content
 // 'use strict'; // Enforce strict mode for better error-checking
 
 // // Function to greet a user
@@ -103,99 +103,99 @@
 
 // missingSemicolon()
 
-// // Example of inconsistent naming conventions
-// function inconsistentNaming() {
-//     var user_name = "John"; // Snake_case instead of camelCase
-//     var UserAge = 30; // PascalCase instead of camelCase
-//     console.log("User: " + user_name + ", Age: " + UserAge);
+// Example of inconsistent naming conventions
+function inconsistentNaming() {
+    var user_name = "John"; // Snake_case instead of camelCase
+    var UserAge = 30; // PascalCase instead of camelCase
+    console.log("User: " + user_name + ", Age: " + UserAge);
+}
+
+inconsistentNaming();
+
+
+
+// 'use strict'; // Enforce strict mode for better error-checking
+
+// // Function to greet a user
+// function sayHello(name) {
+//     if (name) {
+//         console.log("Hello, " + name);
+//     } else {
+//         console.log("Hello, stranger!");
+//     }
 // }
 
-// inconsistentNaming();
+// sayHello("World");
 
+// // Example of a function with proper variable declaration
+// function calculateArea(radius) {
+//     var pi = 3.14159; // Use 'var' for compatibility
+//     if (radius <= 0) {
+//         return 0;
+//     }
+//     return pi * radius * radius;
+// }
 
+// console.log("Area: " + calculateArea(5));
 
-'use strict'; // Enforce strict mode for better error-checking
+// // Corrected for loop to avoid using '++'
+// function countToTen() {
+//     var i; // Declare 'i' outside of the loop for ES5 compatibility
+//     for (i = 1; i <= 10; i += 1) { // Use 'i += 1' instead of 'i++'
+//         console.log(i);
+//     }
+// }
 
-// Function to greet a user
-function sayHello(name) {
-    if (name) {
-        console.log("Hello, " + name);
-    } else {
-        console.log("Hello, stranger!");
-    }
-}
+// countToTen();
 
-sayHello("World");
+// // Avoid using global variables unnecessarily
+// function useLocalVar() {
+//     var localVar = "I'm a local variable"; // Use 'var' for compatibility
+//     console.log(localVar); 
+// }
 
-// Example of a function with proper variable declaration
-function calculateArea(radius) {
-    var pi = 3.14159; // Use 'var' for compatibility
-    if (radius <= 0) {
-        return 0;
-    }
-    return pi * radius * radius;
-}
+// useLocalVar();
 
-console.log("Area: " + calculateArea(5));
+// // Example of a function with used parameters
+// function addNumbers(a, b, c) {
+//     return a + b + c; // Utilize all parameters to avoid unused warnings
+// }
 
-// Corrected for loop to avoid using '++'
-function countToTen() {
-    var i; // Declare 'i' outside of the loop for ES5 compatibility
-    for (i = 1; i <= 10; i += 1) { // Use 'i += 1' instead of 'i++'
-        console.log(i);
-    }
-}
+// console.log("Sum: " + addNumbers(2, 3, 4));
 
-countToTen();
+// // Correct scoping and avoid referencing undefined variables
+// function outerFunction() {
+//     var outerVar = "I'm an outer variable"; // Use 'var' for compatibility
 
-// Avoid using global variables unnecessarily
-function useLocalVar() {
-    var localVar = "I'm a local variable"; // Use 'var' for compatibility
-    console.log(localVar); 
-}
+//     function innerFunction() {
+//         var innerVar = "I'm an inner variable"; // Use 'var' for compatibility
+//         console.log(outerVar); // Accessing outer scope variable
+//         console.log(innerVar); // Correctly using inner scope variable
+//     }
 
-useLocalVar();
+//     innerFunction(); // Ensure function calls are correctly scoped
+// }
 
-// Example of a function with used parameters
-function addNumbers(a, b, c) {
-    return a + b + c; // Utilize all parameters to avoid unused warnings
-}
+// outerFunction();
 
-console.log("Sum: " + addNumbers(2, 3, 4));
+// // Example of an anonymous function with correct formatting
+// var anonymousFunction = function() { // Use 'var' for compatibility
+//     console.log("This is an anonymous function");
+// };
 
-// Correct scoping and avoid referencing undefined variables
-function outerFunction() {
-    var outerVar = "I'm an outer variable"; // Use 'var' for compatibility
+// anonymousFunction();
 
-    function innerFunction() {
-        var innerVar = "I'm an inner variable"; // Use 'var' for compatibility
-        console.log(outerVar); // Accessing outer scope variable
-        console.log(innerVar); // Correctly using inner scope variable
-    }
+// // Example of a function with a fixed missing semicolon
+// function properlyFormattedFunction() {
+//     console.log("This line has a semicolon");
+// }
 
-    innerFunction(); // Ensure function calls are correctly scoped
-}
+// properlyFormattedFunction();
 
-outerFunction();
+// // Example of consistent naming conventions
+// function consistentNaming() {
+//     var userName = "John", userAge = 30; // Declare 'userName' first // Continue with the same 'var' statement
+//     console.log("User: " + userName + ", Age: " + userAge);
+// }
 
-// Example of an anonymous function with correct formatting
-var anonymousFunction = function() { // Use 'var' for compatibility
-    console.log("This is an anonymous function");
-};
-
-anonymousFunction();
-
-// Example of a function with a fixed missing semicolon
-function properlyFormattedFunction() {
-    console.log("This line has a semicolon");
-}
-
-properlyFormattedFunction();
-
-// Example of consistent naming conventions
-function consistentNaming() {
-    var userName = "John", userAge = 30; // Declare 'userName' first // Continue with the same 'var' statement
-    console.log("User: " + userName + ", Age: " + userAge);
-}
-
-consistentNaming();
+// consistentNaming();
